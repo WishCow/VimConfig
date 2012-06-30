@@ -11,6 +11,7 @@ set expandtab
 set wildmenu
 set wildmode=list:longest
 set wildignore+=*.a,*.o,*.bmp,*.png,*.gif,*.jpg,*.jpeg,.git,.hg,.svn,*~,*.swp,*.tmp
+set completeopt+=longest
 let mapleader = "ő"
 set ignorecase
 set smartcase
@@ -25,3 +26,5 @@ set showcmd
 set showmatch
 set hidden
 colors molokai
+
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
