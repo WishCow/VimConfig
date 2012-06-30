@@ -63,3 +63,6 @@
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = https://github.com/vim-scripts/vcscommand.vim.git
+[submodule "bundle/ervjinja"]
+	path = bundle/ervjinja
+	url = https://github.com/ervandew/Jinja.git
