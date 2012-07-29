@@ -66,3 +66,6 @@
 [submodule "bundle/ervjinja"]
 	path = bundle/ervjinja
 	url = https://github.com/ervandew/Jinja.git
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
