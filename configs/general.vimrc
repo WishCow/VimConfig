@@ -26,6 +26,7 @@ set showcmd
 set showmatch
 set hidden
 set fillchars=vert:│,fold:-
+set shiftround
 colors molokai
 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif

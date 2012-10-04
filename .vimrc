@@ -17,3 +17,5 @@ if has("win32") || has("win64")
 else
     runtime configs/linux.vimrc
 end
+
+set wildignore+=*/cache/*

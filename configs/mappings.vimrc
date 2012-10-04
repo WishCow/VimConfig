@@ -1,7 +1,11 @@
 map <A-l> :tabnext<cr>
 map <A-h> :tabprevious<cr>
+map <A-j> :bnext<cr>
+map <A-k> :bprev<cr>
 imap <A-l> <esc>:tabnext<cr>i
 imap <A-h> <esc>:tabprevious<cr>i
+imap <A-j> <esc>:bnext<cr>i
+imap <A-k> <esc>:bprev<cr>i
 map <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 map <leader>n :NERDTreeToggle<CR>
@@ -18,3 +22,5 @@ map <A-7> :tabnext 7<cr>
 map <A-8> :tabnext 8<cr>
 map <A-9> :tabnext 9<cr>
 vmap <leader>pa :call PhpAlign()<CR>
+
+nnoremap <silent> <leader>/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
