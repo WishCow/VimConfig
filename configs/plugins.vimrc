@@ -9,7 +9,7 @@ au BufRead,BufNewFile *.twig set syntax=htmljinja
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
-"let NERDChristmasTree=1
+let NERDTreeHijackNetrw=0
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
