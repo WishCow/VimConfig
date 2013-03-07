@@ -72,6 +72,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
-[submodule "bundle/css-color"]
-	path = bundle/css-color
-	url = git://github.com/skammer/vim-css-color.git
+[submodule "bundle/ian-css-color"]
+	path = bundle/ian-css-color
+	url = git://github.com/ap/vim-css-color.git
