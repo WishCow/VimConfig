@@ -9,7 +9,7 @@ imap <A-k> <esc>:bprev<cr>i
 map <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 map <leader>n :NERDTreeToggle<CR>
-map <leader>pm :make<CR>
+map <leader>N :NERDTreeFind<CR>
 nnoremap / /\v
 vnoremap / /\v
 map <A-1> :tabnext 1<cr>
@@ -21,5 +21,4 @@ map <A-6> :tabnext 6<cr>
 map <A-7> :tabnext 7<cr>
 map <A-8> :tabnext 8<cr>
 map <A-9> :tabnext 9<cr>
-
-nnoremap <silent> <leader>/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
+map <space> <leader><leader>w
