@@ -11,8 +11,6 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeHijackNetrw=0
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-
 " CtrlP stuff
 let g:ctrlp_mruf_max = 20
 let g:ctrlp_match_window_bottom = 0

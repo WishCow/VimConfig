@@ -10,7 +10,7 @@ set sts=4
 set expandtab
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*.a,*.o,*.bmp,*.png,*.gif,*.jpg,*.jpeg,.git,.hg,.svn,*~,*.swp,*.tmp
+set wildignore+=*.a,*.o,*.bmp,*.png,*.gif,*.jpg,*.jpeg,.git,.hg,.svn,*~,*.swp,*.tmp,*/.git/*,*/.hg/*,*/.svn/*
 set completeopt+=longest
 let mapleader = "ő"
 set ignorecase
