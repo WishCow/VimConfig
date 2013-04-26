@@ -75,3 +75,6 @@
 [submodule "bundle/ian-css-color"]
 	path = bundle/ian-css-color
 	url = git://github.com/ap/vim-css-color.git
+[submodule "bundle/startify"]
+	path = bundle/startify
+	url = https://github.com/mhinz/vim-startify.git
