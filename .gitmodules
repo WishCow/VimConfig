@@ -42,10 +42,6 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
     ignore = dirty
-[submodule "bundle/threesome"]
-	path = bundle/threesome
-	url = https://github.com/sjl/threesome.vim.git
-    ignore = dirty
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
