@@ -21,4 +21,4 @@ map <A-6> :tabnext 6<cr>
 map <A-7> :tabnext 7<cr>
 map <A-8> :tabnext 8<cr>
 map <A-9> :tabnext 9<cr>
-map <space> <leader><leader>w
+nmap <space> <Plug>SneakForward

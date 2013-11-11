@@ -55,9 +55,6 @@
 [submodule "bundle/ervjinja"]
 	path = bundle/ervjinja
 	url = https://github.com/ervandew/Jinja.git
-[submodule "bundle/easymotion"]
-	path = bundle/easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
@@ -67,3 +64,9 @@
 [submodule "bundle/splice"]
 	path = bundle/splice
 	url = https://github.com/sjl/splice.vim.git
+[submodule "bundle/sneak"]
+	path = bundle/sneak
+	url = https://github.com/justinmk/vim-sneak.git
+[submodule "bundle/vim-js"]
+	path = bundle/vim-js
+	url = https://github.com/pangloss/vim-javascript.git
