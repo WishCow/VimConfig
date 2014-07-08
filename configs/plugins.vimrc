@@ -1,6 +1,3 @@
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_enable_signs=1
 
 au BufRead,BufNewFile *.twig set syntax=htmljinja
@@ -29,4 +26,6 @@ map <leader>fm :CtrlPMRUFiles<cr>
 " YankRing
 map <leader>y :YRShow<cr>
 
-let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.'`^<>[]{}()\""
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
