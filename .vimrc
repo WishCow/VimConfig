@@ -1,7 +1,6 @@
-runtime bundle/pathogen/autoload/pathogen.vim
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
+call plug#begin('~/.vim/plugged')
+runtime configs/plugins.vimrc
+call plug#end()
 
 runtime configs/general.vimrc
 runtime configs/mappings.vimrc
@@ -22,5 +21,3 @@ let localConfig = expand("~/.vim/configs/local.vimrc")
 if filereadable(localConfig)
     execute 'source' localConfig
 endif
-
-set wildignore+=*/cache/*

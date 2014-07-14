@@ -22,3 +22,16 @@ map <A-7> :tabnext 7<cr>
 map <A-8> :tabnext 8<cr>
 map <A-9> :tabnext 9<cr>
 nmap <space> <Plug>SneakForward
+
+map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+
+map <leader>ff :CtrlP<cr>
+map <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
+map <leader>fb :CtrlPBuffer<cr>
+map <leader>fm :CtrlPMRUFiles<cr>
+
+" YankRing
+map <leader>y :YRShow<cr>

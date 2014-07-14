@@ -1,3 +1,4 @@
 .netrwhist
 swap/*
 configs/local.vimrc
+plugged/*

@@ -1,31 +1,22 @@
-let g:syntastic_enable_signs=1
-
-au BufRead,BufNewFile *.twig set syntax=htmljinja
-
-"NerdTree enhancements
-
-let NERDTreeMinimalUI=1
-let NERDTreeDirArrows=1
-let NERDTreeHijackNetrw=0
-
-" CtrlP stuff
-let g:ctrlp_mruf_max = 20
-let g:ctrlp_match_window_bottom = 0
-let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_jump_to_buffer = 1
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_dotfiles = 1
-let g:ctrlp_max_height = 20
-
-
-map <leader>ff :CtrlP<cr>
-map <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
-map <leader>fb :CtrlPBuffer<cr>
-map <leader>fm :CtrlPMRUFiles<cr>
-
-" YankRing
-map <leader>y :YRShow<cr>
-
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+Plug 'tomasr/molokai'
+Plug 'trapd00r/neverland-vim-theme'
+Plug 'vim-scripts/DirDiff.vim'
+Plug 'sjl/gundo.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'gregsexton/MatchTag'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'mattn/zencoding-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-scripts/vcscommand.vim'
+Plug 'ervandew/Jinja'
+Plug 'groenewege/vim-less'
+Plug 'ap/vim-css-color'
+Plug 'sjl/splice.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'pangloss/vim-javascript'
+Plug 'bling/vim-airline'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-eunuch'
