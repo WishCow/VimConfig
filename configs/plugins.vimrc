@@ -1,6 +1,6 @@
 Plug 'tomasr/molokai'
 Plug 'trapd00r/neverland-vim-theme'
-Plug 'vim-scripts/DirDiff.vim'
+Plug 'vim-scripts/DirDiff.vim', { 'on': 'DirDiff' }
 Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'gregsexton/MatchTag'
@@ -19,3 +19,4 @@ Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-eunuch'
+Plug 'chase/vim-ansible-yaml'
