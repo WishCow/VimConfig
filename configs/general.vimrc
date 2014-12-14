@@ -29,6 +29,9 @@ set fillchars=vert:│,fold:-
 set shiftround
 colors molokai
 
+set noswapfile
+set nobackup
+
 set autoread
 set history=1000
 
