@@ -87,3 +87,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Syntastic
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+
+" Use AG instead of Ack
+let g:ackprg = 'ag --vimgrep'
