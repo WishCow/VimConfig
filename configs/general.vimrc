@@ -68,6 +68,7 @@ let g:ctrlp_jump_to_buffer = 1
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
+let g:ctrlp_map = ''
 let g:ctrlp_user_command = "find %s -type f " .
         \ "-not -wholename '*.git*' -not -wholename '*.svn*' -not -wholename '*.hg*' " .
         \ "-not -iname '*.png' -not -iname '*.gif' -not -iname '*.jp?g' " .
