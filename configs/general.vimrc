@@ -89,5 +89,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
-" Use AG instead of Ack
-let g:ackprg = 'ag --vimgrep'
+" CtrlSF searches regexes by default
+let g:ctrlsf_regex_pattern = 1
+" Only indent two lines, instead of 4 in search results
+let g:ctrlsf_indent = 2

@@ -33,5 +33,9 @@ map <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
 map <leader>fb :CtrlPBuffer<cr>
 map <leader>fm :CtrlPMRUFiles<cr>
 
-" YankRing
-map <leader>y :YRShow<cr>
+map <F2> :YRShow<cr>
+map <F3> :GundoToggle<cr>
+nmap <F4> <Plug>CtrlSFPrompt
+
+nmap ! <Plug>CtrlSFCwordExec
+vmap * <Plug>CtrlSFVwordExec
