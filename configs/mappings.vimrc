@@ -36,6 +36,7 @@ map <leader>fm :CtrlPMRUFiles<cr>
 map <F2> :YRShow<cr>
 map <F3> :GundoToggle<cr>
 nmap <F4> <Plug>CtrlSFPrompt
+nmap <F5> :GitGutterSignsToggle<cr>
 
 nmap ! <Plug>CtrlSFCwordExec
 vmap * <Plug>CtrlSFVwordExec
