@@ -40,3 +40,13 @@ nmap <F5> :GitGutterSignsToggle<cr>
 
 nmap ! <Plug>CtrlSFCwordExec
 vmap * <Plug>CtrlSFVwordExec
+
+map /  <Plug>(incsearch-forward)\v
+map ?  <Plug>(incsearch-backward)\v
+map g/ <Plug>(incsearch-stay)\v
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)

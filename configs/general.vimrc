@@ -93,3 +93,6 @@ let g:syntastic_warning_symbol='⚠'
 let g:ctrlsf_regex_pattern = 1
 " Only indent two lines, instead of 4 in search results
 let g:ctrlsf_indent = 2
+
+" IncSearch, execute nohl on movement
+let g:incsearch#auto_nohlsearch = 1
