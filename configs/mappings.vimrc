@@ -51,4 +51,5 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 noremap 0 ^
-noremap ^ 0
+
+nnoremap zz yypk^i//<esc>j
