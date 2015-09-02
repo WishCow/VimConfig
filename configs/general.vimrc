@@ -69,15 +69,21 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_map = ''
-let g:ctrlp_user_command = "find %s -type f " .
-        \ "-not -wholename '*.git*' -not -wholename '*.svn*' -not -wholename '*.hg*' " .
-        \ "-not -iname '*.png' -not -iname '*.gif' -not -iname '*.jp?g' " .
-        \ "-not -wholename '*.sass-cache*' " .
-        \ "-not -wholename '*web/built*' " .
-        \ "-not -wholename '*app/cache*' " .
-        \ "-not -wholename '*node_modules*' " .
-        \ "| while read filename; do echo ${#filename} $filename; done " .
-        \ "| sort -n | awk '{print $2}'"
+
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+else
+    let g:ctrlp_user_command = "find %s -type f " .
+            \ "-not -wholename '*.git*' -not -wholename '*.svn*' -not -wholename '*.hg*' " .
+            \ "-not -iname '*.png' -not -iname '*.gif' -not -iname '*.jp?g' " .
+            \ "-not -wholename '*.sass-cache*' " .
+            \ "-not -wholename '*web/built*' " .
+            \ "-not -wholename '*app/cache*' " .
+            \ "-not -wholename '*node_modules*' " .
+            \ "| while read filename; do echo ${#filename} $filename; done " .
+            \ "| sort -n | awk '{print $2}'"
+endif
 
 
 " AirLine
