@@ -102,3 +102,7 @@ let g:ctrlsf_indent = 2
 
 " IncSearch, execute nohl on movement
 let g:incsearch#auto_nohlsearch = 1
+
+" Allow per project rc files
+set exrc
+set secure
