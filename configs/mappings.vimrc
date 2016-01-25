@@ -21,7 +21,10 @@ map <A-6> :tabnext 6<cr>
 map <A-7> :tabnext 7<cr>
 map <A-8> :tabnext 8<cr>
 map <A-9> :tabnext 9<cr>
-nmap <space> <Plug>SneakForward
+map <space> <Plug>(easymotion-w)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+map <leader>L <Plug>(easymotion-bd-jk)
 
 map <C-l> <C-w>l
 map <C-j> <C-w>j
