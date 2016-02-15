@@ -8,8 +8,8 @@ imap <A-j> <esc>:bnext<cr>i
 imap <A-k> <esc>:bprev<cr>i
 map <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-map <leader>n :NERDTreeToggle<CR>
-map <leader>N :NERDTreeFind<CR>
+map <leader>n :NERDTreeTabsToggle<CR>
+map <leader>N :NERDTreeTabsFind<CR>
 nnoremap / /\v
 vnoremap / /\v
 map <A-1> :tabnext 1<cr>
