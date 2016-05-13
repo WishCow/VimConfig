@@ -1,11 +1,3 @@
-map <A-l> :tabnext<cr>
-map <A-h> :tabprevious<cr>
-map <A-j> :bnext<cr>
-map <A-k> :bprev<cr>
-imap <A-l> <esc>:tabnext<cr>i
-imap <A-h> <esc>:tabprevious<cr>i
-imap <A-j> <esc>:bnext<cr>i
-imap <A-k> <esc>:bprev<cr>i
 map <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 map <leader>n :NERDTreeTabsToggle<CR>
@@ -56,3 +48,6 @@ map g# <Plug>(incsearch-nohl-g#)
 noremap 0 ^
 
 nnoremap zz yypk^i//<esc>j
+
+nnoremap <tab> :tabnext<cr>
+nnoremap <S-tab> :tabprev<cr>

@@ -27,7 +27,7 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors molokai
+colors gruvbox
 
 set noswapfile
 set nobackup
@@ -107,3 +107,8 @@ let g:incsearch#auto_nohlsearch = 1
 " Allow per project rc files
 set exrc
 set secure
+
+autocmd VimResized * wincmd =
+
+" Do not put double spaces after .?! when joining lines
+set nojoinspaces
