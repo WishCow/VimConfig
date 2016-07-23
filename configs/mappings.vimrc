@@ -1,53 +1,52 @@
-map <S-q> :tabclose<cr>
+nnoremap <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-map <leader>n :NERDTreeTabsToggle<CR>
-map <leader>N :NERDTreeTabsFind<CR>
+nnoremap <leader>n :NERDTreeTabsToggle<CR>
+nnoremap <leader>N :NERDTreeTabsFind<CR>
 nnoremap / /\v
-vnoremap / /\v
-map <A-1> :tabnext 1<cr>
-map <A-2> :tabnext 2<cr>
-map <A-3> :tabnext 3<cr>
-map <A-4> :tabnext 4<cr>
-map <A-5> :tabnext 5<cr>
-map <A-6> :tabnext 6<cr>
-map <A-7> :tabnext 7<cr>
-map <A-8> :tabnext 8<cr>
-map <A-9> :tabnext 9<cr>
-map <space> <Plug>(easymotion-w)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
-map <leader>L <Plug>(easymotion-bd-jk)
+nmap <space> <Plug>(easymotion-w)
+nmap <leader>j <Plug>(easymotion-j)
+nmap <leader>k <Plug>(easymotion-k)
+nmap <leader>L <Plug>(easymotion-bd-jk)
 
-map <C-l> <C-w>l
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
 
-map <leader>ff :CtrlP<cr>
-map <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
-map <leader>fb :CtrlPBuffer<cr>
-map <leader>fm :CtrlPMRUFiles<cr>
+nnoremap <leader>ff :CtrlP<cr>
+nnoremap <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
+nnoremap <leader>fb :CtrlPBuffer<cr>
+nnoremap <leader>fm :CtrlPMRUFiles<cr>
 
-map <F2> :YRShow<cr>
-map <F3> :GundoToggle<cr>
-nmap <F4> <Plug>CtrlSFPrompt
-nmap <F5> :GitGutterSignsToggle<cr>
+nnoremap <F2> :YRShow<cr>
+nnoremap <F4> <Plug>CtrlSFPrompt
+nnoremap <F5> :GitGutterSignsToggle<cr>
 
-nmap ! <Plug>CtrlSFCwordExec
-vmap * <Plug>CtrlSFVwordExec
+nnoremap ! <Plug>CtrlSFCwordExec
 
-map /  <Plug>(incsearch-forward)\v
-map ?  <Plug>(incsearch-backward)\v
-map g/ <Plug>(incsearch-stay)\v
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
-map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
-noremap 0 ^
+nmap /  <Plug>(incsearch-forward)\v
+nmap ?  <Plug>(incsearch-backward)\v
+nmap g/ <Plug>(incsearch-stay)\v
+nmap n  <Plug>(incsearch-nohl-n)
+nmap N  <Plug>(incsearch-nohl-N)
+nmap *  <Plug>(incsearch-nohl-*)
+nmap #  <Plug>(incsearch-nohl-#)
+nmap g* <Plug>(incsearch-nohl-g*)
+nmap g# <Plug>(incsearch-nohl-g#)
 
 nnoremap zz yypk^i//<esc>j
 
 nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprev<cr>
+nnoremap <C-u> <C-i>
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+
+nnoremap - :NERDTreeFind<cr>
+map <Leader><Leader> <Plug>(easymotion-prefix)
+map ) <Plug>(easymotion-sn)
+
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
