@@ -28,6 +28,5 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-scripts/vim-terraform'
 Plug 'othree/html5.vim'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'Raimondi/delimitMate'
-Plug 'junegunn/vim-peekaboo'
+Plug 'jceb/vim-orgmode'
+Plug 'metakirby5/codi.vim'

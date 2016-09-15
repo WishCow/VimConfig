@@ -40,10 +40,6 @@ nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprev<cr>
 nnoremap <C-u> <C-i>
 
-"let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-f>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-
 nnoremap - :NERDTreeFind<cr>
 map <Leader><Leader> <Plug>(easymotion-prefix)
 map ) <Plug>(easymotion-sn)
