@@ -21,7 +21,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'easymotion/vim-easymotion'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'wellle/targets.vim'
 Plug 'lilydjwg/colorizer'
 Plug 'morhetz/gruvbox'

@@ -1,7 +1,7 @@
 nnoremap <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-nmap <leader>n :NERDTreeTabsToggle<CR>
-nmap <leader>N :NERDTreeTabsFind<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>N :NERDTreeFind<CR>
 nmap / /\v
 nmap <space> <Plug>(easymotion-w)
 nmap <leader>j <Plug>(easymotion-j)

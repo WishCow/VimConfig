@@ -59,7 +59,6 @@ au BufRead,BufNewFile *.twig set syntax=htmljinja
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeHijackNetrw=0
-let g:nerdtree_tabs_focus_on_files = 1
 
 " CtrlP stuff
 let g:ctrlp_mruf_max = 20
