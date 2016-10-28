@@ -111,3 +111,7 @@ autocmd VimResized * wincmd =
 
 " Do not put double spaces after .?! when joining lines
 set nojoinspaces
+
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1

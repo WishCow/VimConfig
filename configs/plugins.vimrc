@@ -29,3 +29,4 @@ Plug 'othree/html5.vim'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'jceb/vim-orgmode'
 Plug 'metakirby5/codi.vim'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
