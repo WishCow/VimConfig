@@ -115,3 +115,15 @@ set nojoinspaces
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
+
+" Automatically create directories on save
+fun! <SID>AutoMakeDirectory()
+
+	let s:directory = expand("<afile>:p:h")
+
+	if !isdirectory(s:directory)
+		call mkdir(s:directory, "p")
+	endif
+
+endfun
+autocmd BufWritePre,FileWritePre * :call <SID>AutoMakeDirectory()
