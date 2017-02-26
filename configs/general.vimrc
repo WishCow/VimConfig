@@ -70,9 +70,9 @@ let g:ctrlp_dotfiles = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_map = ''
 
-if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+if executable('rg')
+    set grepprg=rg\ --vimgrep
+    let g:ctrlp_user_command = 'rg --files %s'
 else
     let g:ctrlp_user_command = "find %s -type f " .
             \ "-not -wholename '*.git*' -not -wholename '*.svn*' -not -wholename '*.hg*' " .
