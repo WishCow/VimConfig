@@ -91,9 +91,18 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-" Syntastic
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
+" Ale
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚠'
+let g:ale_statusline_format = ['✗ %d', '⚠ %d', '⬥ ok']
+let g:airline_symbols = { "maxlinenr": '' }
+let g:airline_section_b = "%{fnamemodify(getcwd(), ':t')}"
+let g:airline_section_error = "%{ALEGetStatusLine()}"
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%:%severity%] %s'
+
 
 " CtrlSF searches regexes by default
 let g:ctrlsf_regex_pattern = 1
@@ -126,4 +135,19 @@ fun! <SID>AutoMakeDirectory()
     endif
 
 endfun
+
 autocmd BufWritePre,FileWritePre * :call <SID>AutoMakeDirectory()
+
+" Debugging
+let g:vdebug_options = {}
+let g:vdebug_keymap = {}
+let g:vdebug_options["watch_window_style"] = 'compact'
+let g:vdebug_options["break_on_open"] = 0
+let g:vdebug_options["continuous_mode"] = 1
+let g:vdebug_keymap["run"] = '<C-d>'
+let g:vdebug_keymap["set_breakpoint"] = '<F1>'
+let g:vdebug_keymap["run_to_cursor"] = '<F2>'
+let g:vdebug_keymap["step_over"] = '<F3>'
+let g:vdebug_keymap["step_into"] = '<F4>'
+let g:vdebug_keymap["step_out"] = '<F5>'
+let g:vdebug_keymap["close"] = '<F6>'

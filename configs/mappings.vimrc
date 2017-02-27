@@ -18,9 +18,7 @@ nmap <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
 nmap <leader>fb :CtrlPBuffer<cr>
 nmap <leader>fm :CtrlPMRUFiles<cr>
 
-nmap <F2> :YRShow<cr>
 nmap <F4> <Plug>CtrlSFPrompt
-nmap <F5> :GitGutterSignsToggle<cr>
 
 nmap ! <Plug>CtrlSFCwordExec
 
