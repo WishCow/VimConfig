@@ -151,3 +151,16 @@ let g:vdebug_keymap["step_over"] = '<F3>'
 let g:vdebug_keymap["step_into"] = '<F4>'
 let g:vdebug_keymap["step_out"] = '<F5>'
 let g:vdebug_keymap["close"] = '<F6>'
+
+" Persistent undo
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+
+if has('persistent_undo')
+    let myUndoDir = expand(vimDir . '/undodir')
+    " Create dirs
+    call system('mkdir ' . vimDir)
+    call system('mkdir ' . myUndoDir)
+    let &undodir = myUndoDir
+    set undofile
+endif

@@ -2,3 +2,4 @@
 swap/*
 configs/local.vimrc
 plugged/*
+undodir/*
