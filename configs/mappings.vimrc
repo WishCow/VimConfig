@@ -3,10 +3,8 @@ inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeFind<CR>
 nmap / /\v
-nmap <space> <Plug>(easymotion-w)
-nmap <leader>j <Plug>(easymotion-j)
-nmap <leader>k <Plug>(easymotion-k)
-nmap <leader>L <Plug>(easymotion-bd-jk)
+nmap <space> <Plug>(easymotion-bd-jk)
+omap <space> <Plug>Sneak_s
 
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j

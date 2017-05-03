@@ -34,3 +34,4 @@ Plug 'joonty/vdebug', { 'for': 'php' }
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
+Plug 'justinmk/vim-sneak'
