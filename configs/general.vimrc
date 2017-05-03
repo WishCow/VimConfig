@@ -164,3 +164,6 @@ if has('persistent_undo')
     let &undodir = myUndoDir
     set undofile
 endif
+
+" Highlight blocks of code in markdown
+let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
