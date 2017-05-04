@@ -167,3 +167,7 @@ endif
 
 " Highlight blocks of code in markdown
 let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
+
+let g:sneak#s_next = 1
+let g:sneak#target_labels = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
+let g:EasyMotion_keys = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
