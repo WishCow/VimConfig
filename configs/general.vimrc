@@ -184,3 +184,6 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
 
 map <silent> <leader>d :CtrlPTag<cr><C-\>w
 cmap w!! w !sudo tee > /dev/null %
+
+let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+let g:ycm_server_python_interpreter = '/bin/python2'

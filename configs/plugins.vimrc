@@ -38,3 +38,5 @@ Plug 'justinmk/vim-sneak'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
+Plug 'rust-lang/rust.vim'
+Plug 'Valloric/YouCompleteMe'
