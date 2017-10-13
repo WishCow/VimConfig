@@ -35,3 +35,6 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
 Plug 'justinmk/vim-sneak'
+Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}

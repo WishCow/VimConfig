@@ -103,6 +103,9 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%:%severity%] %s'
 
+let g:ale_linters = {
+    \ 'php': ['phpstan']
+\}
 
 " CtrlSF searches regexes by default
 let g:ctrlsf_regex_pattern = 1
@@ -171,3 +174,13 @@ let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
 let g:sneak#s_next = 1
 let g:sneak#target_labels = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
 let g:EasyMotion_keys = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
+
+let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
+                            \ '*.phar', '*.ini', '*.rst', '*.md',
+                            \ '*vendor/*/test*', '*vendor/*/Test*',
+                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
+                            \ '*var/cache*', '*var/log*']
+
+
+map <silent> <leader>d :CtrlPTag<cr><C-\>w
+cmap w!! w !sudo tee > /dev/null %
