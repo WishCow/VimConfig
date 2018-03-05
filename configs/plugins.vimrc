@@ -19,7 +19,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'easymotion/vim-easymotion'
-Plug 'wellle/targets.vim'
 Plug 'lilydjwg/colorizer'
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
@@ -29,14 +28,13 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'lumiliet/vim-twig'
 Plug 'nelsyeung/twig.vim'
 Plug 'vim-scripts/php-annotations-syntax', { 'for': 'php' }
-Plug 'wannesm/wmgraphviz.vim'
+"Plug 'wannesm/wmgraphviz.vim'
 Plug 'joonty/vdebug', { 'for': 'php' }
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
-Plug 'ryanoasis/vim-devicons'
-Plug 'justinmk/vim-sneak'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
 Plug 'rust-lang/rust.vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'veloce/vim-aldmeris'

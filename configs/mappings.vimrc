@@ -3,7 +3,7 @@ inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeFind<CR>
 nmap / /\v
-nmap <space> <Plug>(easymotion-bd-jk)
+"nmap <space> <Plug>(easymotion-bd-jk)
 omap <space> <Plug>Sneak_s
 
 nnoremap <C-l> <C-w>l
@@ -37,5 +37,7 @@ nnoremap <S-tab> :tabprev<cr>
 nnoremap <C-u> <C-i>
 
 nnoremap - :NERDTreeFind<cr>
-map <Leader><Leader> <Plug>(easymotion-prefix)
 map ) <Plug>(easymotion-sn)
+
+map <F1> :NERDTreeToggle<cr>
+map <Leader>w <Plug>(easymotion-w)
