@@ -171,6 +171,10 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
 
 map <silent> <leader>d :CtrlPTag<cr><C-\>w
 cmap w!! w !sudo tee > /dev/null %
+
+" Merge comments with J in a sensible way
+set formatoptions+=j
+
 let g:LanguageClient_serverCommands = {
     \ 'reason': ['~/.npm-global/bin/ocaml-language-server', '--stdio'],
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
