@@ -11,7 +11,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 
-nmap <leader>ff :CtrlP<cr>
+nmap <leader>ff :FZF<cr>
 nmap <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
 nmap <leader>fb :CtrlPBuffer<cr>
 nmap <leader>fm :CtrlPMRUFiles<cr>

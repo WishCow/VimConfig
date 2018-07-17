@@ -38,3 +38,4 @@ Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
 Plug 'rust-lang/rust.vim'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'veloce/vim-aldmeris'
+Plug '~/.fzf'
