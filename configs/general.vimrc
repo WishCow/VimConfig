@@ -27,7 +27,7 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors aldmeris
+colors palenight
 
 set noswapfile
 set nobackup
@@ -42,11 +42,6 @@ if &listchars ==# 'eol:$'
   endif
 endif
 set list
-
-if &t_Co == 8 && $TERM !~# '^linux'
-  set t_Co=16
-endif
-
 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
@@ -90,6 +85,7 @@ endif
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
 " Ale
 let g:ale_sign_column_always = 1
@@ -98,7 +94,6 @@ let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['✗ %d', '⚠ %d', '⬥ ok']
 let g:airline_symbols = { "maxlinenr": '' }
 let g:airline_section_b = "%{fnamemodify(getcwd(), ':t')}"
-let g:airline_section_error = "%{ALEGetStatusLine()}"
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%:%severity%] %s'
@@ -106,11 +101,6 @@ let g:ale_echo_msg_format = '[%linter%:%severity%] %s'
 let g:ale_linters = {
     \ 'php': ['phpstan']
 \}
-
-" CtrlSF searches regexes by default
-let g:ctrlsf_regex_pattern = 1
-" Only indent two lines, instead of 4 in search results
-let g:ctrlsf_indent = 2
 
 " IncSearch, execute nohl on movement
 let g:incsearch#auto_nohlsearch = 1
@@ -170,10 +160,7 @@ endif
 
 " Highlight blocks of code in markdown
 let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
-
-let g:sneak#s_next = 1
-let g:sneak#target_labels = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
-let g:EasyMotion_keys = "asdfghjklqwertyuiopzxcvbnmASDFGHJKLQWERTYUIOPZXCVBNM"
+let g:EasyMotion_keys = "qwertasdfgyxcvbioklm,"
 
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
                             \ '*.phar', '*.ini', '*.rst', '*.md',
@@ -184,3 +171,31 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
 
 map <silent> <leader>d :CtrlPTag<cr><C-\>w
 cmap w!! w !sudo tee > /dev/null %
+let g:LanguageClient_serverCommands = {
+    \ 'reason': ['~/.npm-global/bin/ocaml-language-server', '--stdio'],
+    \ 'ocaml': ['ocaml-language-server', '--stdio'],
+    \ }
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+
+" CtrlSf
+" Autofocus
+let g:ctrlsf_auto_focus = { "at": "start" }
+
+" Nicer mappings
+let g:ctrlsf_mapping = {"next": "n", "prev": "N", "vsplit": "v", "split": "s"}
+
+" Search regexes by default
+let g:ctrlsf_regex_pattern = 1
+" Only indent two lines, instead of 4 in search results
+let g:ctrlsf_indent = 2
+
+set termguicolors
+
+set t_vb=
+
+" vim hardcodes background color erase even if the terminfo file does
+" not contain bce (not to mention that libvte based terminals
+" incorrectly contain bce in their terminfo files). This causes
+" incorrect background rendering when using a color theme with a
+" background color.
+let &t_ut=''

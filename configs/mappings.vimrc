@@ -3,8 +3,6 @@ inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeFind<CR>
 nmap / /\v
-"nmap <space> <Plug>(easymotion-bd-jk)
-omap <space> <Plug>Sneak_s
 
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
@@ -12,7 +10,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 
 nmap <leader>ff :FZF<cr>
-nmap <leader>fF :ClearCtrlPCache<cr>:CtrlP<cr>
 nmap <leader>fb :CtrlPBuffer<cr>
 nmap <leader>fm :CtrlPMRUFiles<cr>
 
@@ -36,8 +33,12 @@ nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprev<cr>
 nnoremap <C-u> <C-i>
 
-nnoremap - :NERDTreeFind<cr>
-map ) <Plug>(easymotion-sn)
-
 map <F1> :NERDTreeToggle<cr>
-map <Leader>w <Plug>(easymotion-w)
+map <Leader>w <Plug>(easymotion-wl)
+map <Leader>e <Plug>(easymotion-el)
+map <Leader>t <Plug>(easymotion-tl)
+map <space> <Plug>(easymotion-jumptoanywhere)
+map s <Plug>(easymotion-sl)
+omap <space> <Plug>(easymotion-wl)
+
+nmap <silent> <leader>k <Plug>(ale_next_wrap)

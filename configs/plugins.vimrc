@@ -1,7 +1,5 @@
 Plug 'trapd00r/neverland-vim-theme'
-Plug 'vim-scripts/DirDiff.vim', { 'on': 'DirDiff' }
 Plug 'vim-scripts/matchit.zip'
-Plug 'gregsexton/MatchTag'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -28,14 +26,23 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'lumiliet/vim-twig'
 Plug 'nelsyeung/twig.vim'
 Plug 'vim-scripts/php-annotations-syntax', { 'for': 'php' }
-"Plug 'wannesm/wmgraphviz.vim'
 Plug 'joonty/vdebug', { 'for': 'php' }
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags', { 'for': 'php' }
 Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
 Plug 'rust-lang/rust.vim'
-"Plug 'Valloric/YouCompleteMe'
 Plug 'veloce/vim-aldmeris'
 Plug '~/.fzf'
+Plug 'reasonml-editor/vim-reason-plus', { 'for': 'reason' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ 'for': 'reason'
+    \ }
+Plug 'jparise/vim-graphql', { 'for': 'js' }
+Plug 'styled-components/vim-styled-components', {'branch': 'main'}
+Plug 'wellle/targets.vim'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'rakr/vim-one'
