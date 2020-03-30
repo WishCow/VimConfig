@@ -2,6 +2,7 @@ nnoremap <S-q> :tabclose<cr>
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeFind<CR>
+nmap <leader>q :tabonly<CR>
 nmap / /\v
 
 nnoremap <C-l> <C-w>l
@@ -16,6 +17,7 @@ nmap <leader>fm :CtrlPMRUFiles<cr>
 nmap <F4> <Plug>CtrlSFPrompt
 
 nmap ! <Plug>CtrlSFCwordExec
+vmap ! <Plug>CtrlSFVwordExec
 
 nmap /  <Plug>(incsearch-forward)\v
 nmap ?  <Plug>(incsearch-backward)\v
@@ -34,6 +36,7 @@ nnoremap <S-tab> :tabprev<cr>
 nnoremap <C-u> <C-i>
 
 map <F1> :NERDTreeToggle<cr>
+map <F2> :tabnew ~/.vim/configs/plugins.vimrc<cr>
 map <Leader>w <Plug>(easymotion-wl)
 map <Leader>e <Plug>(easymotion-el)
 map <Leader>t <Plug>(easymotion-tl)
