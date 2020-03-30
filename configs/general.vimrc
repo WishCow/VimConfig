@@ -27,7 +27,7 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors palenight
+colors spacecamp
 
 set noswapfile
 set nobackup

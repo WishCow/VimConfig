@@ -5,6 +5,7 @@ call plug#end()
 runtime configs/general.vimrc
 runtime configs/mappings.vimrc
 runtime configs/functions.vimrc
+runtime configs/coc.vim
 
 if has("gui_running")
     runtime configs/gui.vimrc
