@@ -48,3 +48,5 @@ Plug 'chr4/nginx.vim'
 Plug 'pechorin/any-jump.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'liuchengxu/vista.vim'
+Plug 'dag/vim-fish'
