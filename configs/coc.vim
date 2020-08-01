@@ -33,8 +33,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+" Use <c-l> to trigger completion.
+inoremap <silent><expr> <c-l> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
@@ -46,8 +46,8 @@ else
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>j <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>k <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -138,3 +138,16 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+nmap <silent>ga :CocCommand actions.open<cr>
+nmap <silent>gr <Plug>(coc-references)
+nmap <silent>gc <Plug>(coc-codelens-action)
+nmap <silent>ge <Plug>(coc-refactor)
+
+inoremap <c-x><c-b> <c-r>=ListBuffers()<cr>
+function! ListBuffers()
+  let buffers = getbufinfo({'buflisted': 1, 'bufloaded': 1})
+  let bufnames = map(map(buffers, 'v:val.name'), 'substitute(v:val, getcwd(), "", "")')
+  call complete(col('.'), bufnames)
+  return ''
+endfunction
