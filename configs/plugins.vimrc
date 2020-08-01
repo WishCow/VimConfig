@@ -42,3 +42,4 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
+Plug 'frazrepo/vim-rainbow'

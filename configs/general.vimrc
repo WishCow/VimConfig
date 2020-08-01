@@ -203,3 +203,5 @@ set t_vb=
 " incorrect background rendering when using a color theme with a
 " background color.
 let &t_ut=''
+
+let g:rainbow_active = 1
