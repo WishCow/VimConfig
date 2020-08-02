@@ -1,5 +1,4 @@
 nnoremap <S-q> :tabclose<cr>
-inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeFind<CR>
 nmap <leader>q :tabonly<CR>
@@ -40,7 +39,6 @@ map <F2> :tabnew ~/.vim/configs/plugins.vimrc<cr>
 map <Leader>w <Plug>(easymotion-wl)
 map <Leader>e <Plug>(easymotion-el)
 map <Leader>t <Plug>(easymotion-tl)
-map <space> <Plug>(easymotion-jumptoanywhere)
 map s <Plug>(easymotion-sl)
 omap <space> <Plug>(easymotion-wl)
 

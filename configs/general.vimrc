@@ -1,6 +1,4 @@
 set nocompatible
-filetype plugin indent on
-syntax on
 set nu
 set hlsearch
 set incsearch
@@ -29,6 +27,7 @@ set fillchars=vert:│,fold:-
 set shiftround
 colors spacecamp
 
+set guicursor="n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 set noswapfile
 set nobackup
 
@@ -54,6 +53,10 @@ au BufRead,BufNewFile *.twig set syntax=htmljinja
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeHijackNetrw=0
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+
 
 " CtrlP stuff
 let g:ctrlp_mruf_max = 20
@@ -114,10 +117,6 @@ autocmd VimResized * wincmd =
 " Do not put double spaces after .?! when joining lines
 set nojoinspaces
 
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
-
 " Automatically create directories on save
 fun! <SID>AutoMakeDirectory()
 
@@ -174,12 +173,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Merge comments with J in a sensible way
 set formatoptions+=j
-
-let g:LanguageClient_serverCommands = {
-    \ 'reason': ['~/.npm-global/bin/ocaml-language-server', '--stdio'],
-    \ 'ocaml': ['ocaml-language-server', '--stdio'],
-    \ }
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 " CtrlSf
 " Autofocus

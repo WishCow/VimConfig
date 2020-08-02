@@ -13,3 +13,11 @@ function! IPhpInsertUse()
 endfunction
 autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
 autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
+
+inoremap <c-x><c-b> <c-r>=ListBuffers()<cr>
+function! ListBuffers()
+  let buffers = getbufinfo({'buflisted': 1, 'bufloaded': 1})
+  let bufnames = map(map(buffers, 'v:val.name'), 'substitute(v:val, getcwd(), "", "")')
+  call complete(col('.'), bufnames)
+  return ''
+endfunction
