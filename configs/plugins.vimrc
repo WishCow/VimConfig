@@ -11,12 +11,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-eunuch'
 Plug 'dyng/ctrlsf.vim'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'airblade/vim-gitgutter'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'easymotion/vim-easymotion'
-Plug 'lilydjwg/colorizer'
 "Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
@@ -43,3 +41,7 @@ Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
 Plug 'frazrepo/vim-rainbow'
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+

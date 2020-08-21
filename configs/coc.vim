@@ -38,8 +38,8 @@ else
   imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
-nmap <silent> <leader>j <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>k <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>j <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>k <Plug>(coc-diagnostic-prev)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
