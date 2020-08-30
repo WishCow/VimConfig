@@ -88,7 +88,7 @@ endif
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#ale#enabled = 1
+"let g:airline#extensions#ale#enabled = 1
 
 " Ale
 let g:ale_sign_column_always = 1
@@ -198,3 +198,9 @@ set t_vb=
 let &t_ut=''
 
 let g:rainbow_active = 1
+
+set diffopt+=internal,algorithm:patience
+
+let g:lt_location_list_toggle_map = '<leader>f'
+let g:lt_quickfix_list_toggle_map = '<leader>q'
+set inccommand=split
