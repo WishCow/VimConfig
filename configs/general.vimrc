@@ -88,7 +88,6 @@ endif
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#ale#enabled = 1
 
 " Ale
 let g:ale_sign_column_always = 1
@@ -204,3 +203,7 @@ set diffopt+=internal,algorithm:patience
 let g:lt_location_list_toggle_map = '<leader>f'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
 set inccommand=split
+let g:neomake_virtualtext_current_error = 0
+
+au BufReadPost,BufNewFile *.rs compiler cargo | call neomake#configure#automake('nrwi', 500)
+let g:neomake_open_list = 2

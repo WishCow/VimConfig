@@ -43,3 +43,7 @@ map s <Plug>(easymotion-sl)
 omap <space> <Plug>(easymotion-wl)
 
 nmap <silent> <leader>k <Plug>(ale_next_wrap)
+
+" Reselect selection after indenting
+vnoremap < <gv
+vnoremap > >gv

@@ -37,7 +37,7 @@ Plug 'ryvnf/readline.vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'chr4/nginx.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
@@ -45,9 +45,6 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'wellle/context.vim'
 Plug 'Valloric/ListToggle'
-Plug 'stefandtw/quickfix-reflector.vim'
-Plug 'kshenoy/vim-signature'
-Plug 'junegunn/vim-peekaboo'
 Plug 'rhysd/clever-f.vim'
+Plug 'neomake/neomake'
