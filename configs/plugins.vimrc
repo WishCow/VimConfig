@@ -37,7 +37,7 @@ Plug 'ryvnf/readline.vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'chr4/nginx.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
