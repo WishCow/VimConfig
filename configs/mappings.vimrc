@@ -28,7 +28,7 @@ nmap #  <Plug>(incsearch-nohl-#)
 nmap g* <Plug>(incsearch-nohl-g*)
 nmap g# <Plug>(incsearch-nohl-g#)
 
-nnoremap zz yypk^i//<esc>j
+"nnoremap zz yypk^i//<esc>j
 
 nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprev<cr>
@@ -36,14 +36,6 @@ nnoremap <C-u> <C-i>
 
 map <F1> :NERDTreeToggle<cr>
 map <F2> :tabnew ~/.vim/configs/plugins.vimrc<cr>
-map <Leader>w <Plug>(easymotion-wl)
-map <Leader>e <Plug>(easymotion-el)
-map <Leader>t <Plug>(easymotion-tl)
-map s <Plug>(easymotion-sl)
-omap <space> <Plug>(easymotion-wl)
 
+nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 nmap <silent> <leader>k <Plug>(ale_next_wrap)
-
-" Reselect selection after indenting
-vnoremap < <gv
-vnoremap > >gv

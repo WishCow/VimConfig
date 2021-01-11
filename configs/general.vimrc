@@ -10,7 +10,6 @@ set wildmenu
 set wildmode=list:longest
 set wildignore+=*.a,*.o,*.bmp,*.png,*.gif,*.jpg,*.jpeg,.git,.hg,.svn,*~,*.swp,*.tmp,*/.git/*,*/.hg/*,*/.svn/*,app/cache/*,app/logs,.sass-cache,node_modules,web/built/*
 set completeopt+=longest
-let mapleader = "ő"
 set ignorecase
 set smartcase
 set laststatus=2
@@ -25,7 +24,7 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors spacecamp
+colors neverland2
 
 set guicursor="n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 set noswapfile
@@ -158,7 +157,6 @@ endif
 
 " Highlight blocks of code in markdown
 let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
-let g:EasyMotion_keys = "qwertasdfgyxcvbioklm,"
 
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
                             \ '*.phar', '*.ini', '*.rst', '*.md',
@@ -200,8 +198,8 @@ let g:rainbow_active = 1
 
 set diffopt+=internal,algorithm:patience
 
-let g:lt_location_list_toggle_map = '<leader>f'
-let g:lt_quickfix_list_toggle_map = '<leader>q'
+let g:lt_location_list_toggle_map = '<leader>l'
+let g:lt_quickfix_list_toggle_map = '<leader>u'
 set inccommand=split
 let g:neomake_virtualtext_current_error = 0
 

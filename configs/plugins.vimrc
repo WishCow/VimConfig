@@ -3,7 +3,7 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'vim-scripts/YankRing.vim'
+"Plug 'vim-scripts/YankRing.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'lepture/vim-jinja'
 "Plug 'sjl/splice.vim'
@@ -15,7 +15,6 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
-Plug 'easymotion/vim-easymotion'
 "Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
@@ -37,7 +36,7 @@ Plug 'ryvnf/readline.vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'chr4/nginx.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
@@ -45,6 +44,14 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'Valloric/ListToggle'
 Plug 'rhysd/clever-f.vim'
 Plug 'neomake/neomake'
+Plug 'unblevable/quick-scope'
+Plug 'liuchengxu/vista.vim'
+Plug 'justinmk/vim-sneak'
+
+" Coc plugins
+" coc-yank
+" coc-rust-analyzer
+" coc-pyright
+" coc-json
