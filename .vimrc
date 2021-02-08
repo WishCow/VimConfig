@@ -1,4 +1,4 @@
-let mapleader = "ő"
+let mapleader = " "
 call plug#begin('~/.vim/plugged')
 runtime configs/plugins.vimrc
 call plug#end()
@@ -7,7 +7,7 @@ runtime configs/general.vimrc
 runtime configs/mappings.vimrc
 runtime configs/functions.vimrc
 runtime configs/coc.vim
-"runtime configs/colemak.vim
+runtime configs/colemak.vim
 
 if has("gui_running")
     runtime configs/gui.vimrc

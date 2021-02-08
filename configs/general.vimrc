@@ -24,7 +24,7 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors neverland2
+colors moonfly
 
 set guicursor="n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 set noswapfile
@@ -205,3 +205,5 @@ let g:neomake_virtualtext_current_error = 0
 
 au BufReadPost,BufNewFile *.rs compiler cargo | call neomake#configure#automake('nrwi', 500)
 let g:neomake_open_list = 2
+set scrolloff=10
+let g:sneak#s_next = 1

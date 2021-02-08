@@ -13,7 +13,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-eunuch'
 Plug 'dyng/ctrlsf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'haya14busa/incsearch.vim'
+"Plug 'haya14busa/incsearch.vim'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 "Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
@@ -49,6 +49,7 @@ Plug 'neomake/neomake'
 Plug 'unblevable/quick-scope'
 Plug 'liuchengxu/vista.vim'
 Plug 'justinmk/vim-sneak'
+Plug 'challenger-deep-theme/vim'
 
 " Coc plugins
 " coc-yank
