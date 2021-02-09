@@ -6,7 +6,7 @@ Plug 'tpope/vim-repeat'
 "Plug 'vim-scripts/YankRing.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'lepture/vim-jinja'
-"Plug 'sjl/splice.vim'
+Plug 'sjl/splice.vim'
 Plug 'christoomey/vim-conflicted'
 Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
@@ -40,7 +40,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-loc
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'ryanoasis/vim-devicons'
-Plug 'frazrepo/vim-rainbow'
+Plug 'luochen1990/rainbow'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -50,6 +50,7 @@ Plug 'unblevable/quick-scope'
 Plug 'liuchengxu/vista.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'challenger-deep-theme/vim'
+Plug 'samoshkin/vim-mergetool'
 
 " Coc plugins
 " coc-yank

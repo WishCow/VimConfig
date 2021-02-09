@@ -41,3 +41,4 @@ nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 nmap <silent> <leader>k <Plug>(ale_next_wrap)
 
 nmap <C-t> :tabnew<cr>
+nmap - :Explore<cr>

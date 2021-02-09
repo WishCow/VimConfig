@@ -196,6 +196,13 @@ let &t_ut=''
 
 let g:rainbow_active = 1
 
+let g:rainbow_conf = {
+  \    'separately': {
+  \       'nerdtree': 0
+  \    }
+  \}
+
+
 set diffopt+=internal,algorithm:patience
 
 let g:lt_location_list_toggle_map = '<leader>l'
@@ -206,4 +213,11 @@ let g:neomake_virtualtext_current_error = 0
 au BufReadPost,BufNewFile *.rs compiler cargo | call neomake#configure#automake('nrwi', 500)
 let g:neomake_open_list = 2
 set scrolloff=10
+let g:mergetool_layout = 'mr'
+let g:mergetool_prefer_revision = 'local'
+
+" add yaml stuffs
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 foldlevel=5 expandtab
+
 let g:sneak#s_next = 1
