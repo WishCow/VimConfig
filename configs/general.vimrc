@@ -24,7 +24,6 @@ set showmatch
 set hidden
 set fillchars=vert:│,fold:-
 set shiftround
-colors moonfly
 
 set guicursor="n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 set noswapfile
@@ -194,15 +193,6 @@ set t_vb=
 " background color.
 let &t_ut=''
 
-let g:rainbow_active = 1
-
-let g:rainbow_conf = {
-  \    'separately': {
-  \       'nerdtree': 0
-  \    }
-  \}
-
-
 set diffopt+=internal,algorithm:patience
 
 let g:lt_location_list_toggle_map = '<leader>l'
@@ -217,7 +207,7 @@ let g:mergetool_layout = 'mr'
 let g:mergetool_prefer_revision = 'local'
 
 " add yaml stuffs
-au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 foldlevel=5 expandtab
+au! BufNewFile,BufReadPost *.{yaml,yml} setlocal filetype=yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 foldlevel=5 expandtab foldmethod=indent
 
 let g:sneak#s_next = 1
