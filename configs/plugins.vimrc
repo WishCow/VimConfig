@@ -41,7 +41,8 @@ Plug 'neomake/neomake'
 Plug 'liuchengxu/vista.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'challenger-deep-theme/vim'
-Plug 'samoshkin/vim-mergetool' "TODO
+Plug 'samoshkin/vim-mergetool'
+Plug 'ayu-theme/ayu-vim'
 
 " Coc plugins
 " coc-yank

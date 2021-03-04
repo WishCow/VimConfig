@@ -214,3 +214,5 @@ au! BufNewFile,BufReadPost *.{yaml,yml} setlocal filetype=yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 foldlevel=5 expandtab foldmethod=indent
 
 let g:sneak#s_next = 1
+
+let g:mergetool_layout = 'mr,b'
