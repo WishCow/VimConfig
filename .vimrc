@@ -16,6 +16,3 @@ end
 if has("gui_running")
     runtime configs/gui.vimrc
 end
-
-
-au BufNewFile,BufRead *.html.twig set ft=html.twig
