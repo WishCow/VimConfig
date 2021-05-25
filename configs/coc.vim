@@ -78,11 +78,6 @@ augroup end
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
-" Remap keys for applying codeAction to the current line.
-nmap <leader>ac  <Plug>(coc-codeaction)
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
-
 " Introduce function text object
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
 xmap if <Plug>(coc-funcobj-i)
@@ -135,8 +130,13 @@ nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr>
 " Resume latest coc list.
 nnoremap <silent> <leader>p  :<C-u>CocListResume<CR>
 
-"map <silent>ga  <Plug>(coc-codeaction-selected)
-nmap <silent>ga v<Plug>(coc-codeaction-selected)
+map <silent>ga  <Plug>(coc-codeaction-cursor)
+nmap <silent>gc  <Plug>(coc-codeaction)
+nmap <silent>gv <Plug>(coc-codeaction-selected)
+
+" Apply AutoFix to problem on the current line.
+nmap <leader>gf  <Plug>(coc-fix-current)
+
 nmap <silent>gr <Plug>(coc-references)
 nmap <silent>gc <Plug>(coc-codelens-action)
 nmap <silent>ge <Plug>(coc-refactor)

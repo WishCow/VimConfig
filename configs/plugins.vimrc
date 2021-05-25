@@ -43,6 +43,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'challenger-deep-theme/vim'
 Plug 'samoshkin/vim-mergetool'
 Plug 'ayu-theme/ayu-vim'
+Plug 'pineapplegiant/spaceduck'
 
 " Coc plugins
 " coc-yank
