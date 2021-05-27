@@ -21,6 +21,6 @@ nmap <silent> <leader>e <Plug>(coc-diagnostic-prev)
 
 nmap <leader>F <Plug>CtrlSFPrompt
 
-nmap <leader>f :FZF<cr>
-nmap <leader>b :CtrlPBuffer<cr>
-nmap <leader>m :CtrlPMRUFiles<cr>
+nmap <leader>f :Files<cr>
+nmap <leader>b :Buffers<cr>
+nmap <leader>m :History<cr>

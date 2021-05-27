@@ -9,9 +9,9 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 
 if !g:is_colemak
-    nmap <leader>ff :FZF<cr>
-    nmap <leader>fb :CtrlPBuffer<cr>
-    nmap <leader>fm :CtrlPMRUFiles<cr>
+    nmap <leader>ff :Files<cr>
+    nmap <leader>fb :Buffers<cr>
+    nmap <leader>fm :History<cr>
 end
 
 nmap <F2> :tabnew ~/.vim/configs/plugins.vimrc<cr>

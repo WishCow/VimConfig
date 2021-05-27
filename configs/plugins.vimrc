@@ -3,7 +3,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sjl/splice.vim'
 Plug 'christoomey/vim-conflicted' "TODO
 Plug 'pangloss/vim-javascript'
@@ -18,7 +17,8 @@ Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'metakirby5/codi.vim', { 'on': 'Codi' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
-Plug '~/.fzf'
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+Plug 'lotabout/skim.vim'
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 Plug 'wellle/targets.vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -44,6 +44,11 @@ Plug 'challenger-deep-theme/vim'
 Plug 'samoshkin/vim-mergetool'
 Plug 'ayu-theme/ayu-vim'
 Plug 'pineapplegiant/spaceduck'
+
+" For LSP instead of coc-nvim:
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'nvim-lua/lsp_extensions.nvim'
+"Plug 'nvim-lua/completion-nvim'
 
 " Coc plugins
 " coc-yank
