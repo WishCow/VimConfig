@@ -44,6 +44,8 @@ Plug 'challenger-deep-theme/vim'
 Plug 'samoshkin/vim-mergetool'
 Plug 'ayu-theme/ayu-vim'
 Plug 'pineapplegiant/spaceduck'
+Plug 'leafgarland/typescript-vim'
+Plug 'folke/which-key.nvim'
 
 " For LSP instead of coc-nvim:
 "Plug 'neovim/nvim-lspconfig'
