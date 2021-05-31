@@ -7,8 +7,8 @@ runtime configs/local.vimrc
 runtime configs/general.vimrc
 runtime configs/mappings.vimrc
 runtime configs/functions.vimrc
-runtime configs/coc.vim
-"runtime configs/lsp.vimrc
+"runtime configs/coc.vim
+runtime configs/lsp.vimrc
 if g:is_colemak
     runtime configs/colemak.vim
 end

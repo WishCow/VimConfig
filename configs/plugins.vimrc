@@ -29,10 +29,10 @@ Plug 'ryvnf/readline.vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'chr4/nginx.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -46,11 +46,17 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'pineapplegiant/spaceduck'
 Plug 'leafgarland/typescript-vim'
 Plug 'folke/which-key.nvim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " For LSP instead of coc-nvim:
-"Plug 'neovim/nvim-lspconfig'
-"Plug 'nvim-lua/lsp_extensions.nvim'
-"Plug 'nvim-lua/completion-nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'nvim-lua/completion-nvim'
+"Plug 'simrat39/rust-tools.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Coc plugins
 " coc-yank
