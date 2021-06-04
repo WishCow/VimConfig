@@ -92,3 +92,5 @@ require('telescope').setup{
   }
 }
 EOF
+
+set completeopt=menuone,noselect

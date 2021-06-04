@@ -138,5 +138,5 @@ nmap <silent>gv <Plug>(coc-codeaction-selected)
 nmap <leader>gf  <Plug>(coc-fix-current)
 
 nmap <silent>gr <Plug>(coc-references)
-nmap <silent>gc <Plug>(coc-codelens-action)
+"nmap <silent>gc <Plug>(coc-codelens-action)
 nmap <silent>ge <Plug>(coc-refactor)
