@@ -3,7 +3,8 @@
 " menuone: popup even when there's only one match
 " noinsert: Do not insert text until a selection is made
 " noselect: Do not select, force user to select one from the menu
-set completeopt=menuone,noinsert,noselect
+"set completeopt=menuone,noinsert,noselect
+set completeopt=menuone,noselect
 
 " Avoid showing extra messages when using completion
 set shortmess+=c
@@ -93,4 +94,6 @@ require('telescope').setup{
 }
 EOF
 
-set completeopt=menuone,noselect
+map ga :Telescope lsp_code_actions<cr>
+map <leader>s :Telescope lsp_workspace_symbols<cr>
+map <leader>d :Telescope lsp_workspace_diagnostics<cr>

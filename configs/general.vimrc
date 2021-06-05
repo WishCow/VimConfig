@@ -56,54 +56,12 @@ let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
 
-" CtrlP stuff
-let g:ctrlp_mruf_max = 20
-let g:ctrlp_match_window_bottom = 0
-let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_jump_to_buffer = 1
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_dotfiles = 1
-let g:ctrlp_max_height = 20
-let g:ctrlp_map = ''
-
-if executable('rg')
-    set grepprg=rg\ --vimgrep
-    let g:ctrlp_user_command = 'rg --files %s'
-else
-    let g:ctrlp_user_command = "find %s -type f " .
-            \ "-not -wholename '*.git*' -not -wholename '*.svn*' -not -wholename '*.hg*' " .
-            \ "-not -iname '*.png' -not -iname '*.gif' -not -iname '*.jp?g' " .
-            \ "-not -wholename '*.sass-cache*' " .
-            \ "-not -wholename '*web/built*' " .
-            \ "-not -wholename '*app/cache*' " .
-            \ "-not -wholename '*node_modules*' " .
-            \ "| while read filename; do echo ${#filename} $filename; done " .
-            \ "| sort -n | awk '{print $2}'"
-endif
-
-
 " AirLine
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled=1
 let g:airline#extensions#branch#enabled=1
-
-"let g:airline_symbols = { "maxlinenr": '' }
-"let g:airline_section_b = "%{fnamemodify(getcwd(), ':t')}"
-
-" Ale
-let g:ale_sign_column_always = 1
-let g:ale_sign_error = '✗'
-let g:ale_sign_warning = '⚠'
-let g:ale_statusline_format = ['✗ %d', '⚠ %d', '⬥ ok']
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%:%severity%] %s'
-
-let g:ale_linters = {
-    \ 'php': ['phpstan']
-\}
 
 " IncSearch, execute nohl on movement
 let g:incsearch#auto_nohlsearch = 1
@@ -130,20 +88,6 @@ endfun
 
 autocmd BufWritePre,FileWritePre * :call <SID>AutoMakeDirectory()
 
-" Debugging
-let g:vdebug_options = {}
-let g:vdebug_keymap = {}
-let g:vdebug_options["watch_window_style"] = 'compact'
-let g:vdebug_options["break_on_open"] = 0
-let g:vdebug_options["continuous_mode"] = 1
-let g:vdebug_keymap["run"] = '<C-d>'
-let g:vdebug_keymap["set_breakpoint"] = '<F1>'
-let g:vdebug_keymap["run_to_cursor"] = '<F2>'
-let g:vdebug_keymap["step_over"] = '<F3>'
-let g:vdebug_keymap["step_into"] = '<F4>'
-let g:vdebug_keymap["step_out"] = '<F5>'
-let g:vdebug_keymap["close"] = '<F6>'
-
 " Persistent undo
 let vimDir = '$HOME/.vim'
 let &runtimepath.=','.vimDir
@@ -166,8 +110,6 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
                             \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
                             \ '*var/cache*', '*var/log*']
 
-
-map <silent> <leader>d :CtrlPTag<cr><C-\>w
 cmap w!! w !sudo tee > /dev/null %
 
 " Merge comments with J in a sensible way
@@ -203,42 +145,14 @@ let g:lt_quickfix_list_toggle_map = '<leader>u'
 set inccommand=split
 let g:neomake_virtualtext_current_error = 0
 
-au BufReadPost,BufNewFile *.rs compiler cargo | call neomake#configure#automake('nrwi', 500)
 let g:neomake_open_list = 2
 set scrolloff=10
 let g:mergetool_layout = 'mr'
 let g:mergetool_prefer_revision = 'local'
 
-" add yaml stuffs
-au! BufNewFile,BufReadPost *.{yaml,yml} setlocal filetype=yaml
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 foldlevel=5 expandtab foldmethod=indent
-
 let g:sneak#s_next = 1
 
 let g:mergetool_layout = 'mr,b'
-
-function! GoToNextIndent(inc)
-    " Get the cursor current position
-    let currentPos = getpos('.')
-    let currentLine = currentPos[1]
-    let matchIndent = 0
-
-    " Look for a line with the same indent level whithout going out of the buffer
-    while !matchIndent && currentLine != line('$') + 1 && currentLine != -1
-        let currentLine += a:inc
-        let matchIndent = indent(currentLine) == indent('.')
-    endwhile
-
-    " If a line is found go to this line
-    if (matchIndent)
-        let currentPos[1] = currentLine
-        call setpos('.', currentPos)
-    endif
-endfunction
-
-
-nnoremap <leader>ip :call GoToNextIndent(1)<CR>
-nnoremap <leader>in :call GoToNextIndent(-1)<CR>
 
 lua << EOF
   require("which-key").setup {
@@ -247,4 +161,3 @@ lua << EOF
     -- refer to the configuration section below
   }
 EOF
-
