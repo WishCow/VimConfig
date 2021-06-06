@@ -94,6 +94,8 @@ require('telescope').setup{
 }
 EOF
 
-map ga :Telescope lsp_code_actions<cr>
+map ga :Telescope lsp_code_actions theme=get_dropdown<cr>
 map <leader>s :Telescope lsp_workspace_symbols<cr>
-map <leader>d :Telescope lsp_workspace_diagnostics<cr>
+map <leader>e :Telescope lsp_workspace_diagnostics<cr>
+map <leader>d :Telescope lsp_definitions<cr>
+map <leader>r :Telescope lsp_references<cr>
