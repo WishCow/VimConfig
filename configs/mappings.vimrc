@@ -1,5 +1,5 @@
 nnoremap <S-q> :tabclose<cr>
-nmap _ :NERDTreeToggle<CR>
+nmap _ :NvimTreeToggle<CR>
 nmap <leader>q :tabonly<CR>
 nmap / /\v
 

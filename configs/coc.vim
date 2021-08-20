@@ -120,7 +120,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings using CoCList:
 " Show all diagnostics.
-nnoremap <silent> <leader>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <leader>e  :<C-u>CocList --normal diagnostics<cr>
 " Show commands.
 nnoremap <silent> <leader>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
@@ -138,5 +138,6 @@ nmap <silent>gv <Plug>(coc-codeaction-selected)
 nmap <leader>gf  <Plug>(coc-fix-current)
 
 nmap <silent>gr <Plug>(coc-references)
-"nmap <silent>gc <Plug>(coc-codelens-action)
+nmap <silent>gR <Plug>(coc-references-used)
+nmap <silent>gC <Plug>(coc-codelens-action)
 nmap <silent>ge <Plug>(coc-refactor)
