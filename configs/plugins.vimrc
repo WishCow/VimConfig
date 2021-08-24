@@ -9,7 +9,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-eunuch'
 Plug 'dyng/ctrlsf.vim'
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
@@ -34,7 +34,7 @@ Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'rhysd/clever-f.vim'
 Plug 'neomake/neomake'
 Plug 'liuchengxu/vista.vim'
@@ -46,7 +46,6 @@ Plug 'pineapplegiant/spaceduck'
 Plug 'leafgarland/typescript-vim'
 Plug 'folke/which-key.nvim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
@@ -54,6 +53,8 @@ Plug 'nvim-telescope/telescope.nvim'
 "Plug 'fannheyward/telescope-coc.nvim'
 Plug 'ironhouzi/vim-stim'
 Plug 'p00f/nvim-ts-rainbow'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'lewis6991/gitsigns.nvim'
 
 " For LSP instead of coc-nvim:
 "Plug 'neovim/nvim-lspconfig'

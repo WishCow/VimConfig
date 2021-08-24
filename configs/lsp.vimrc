@@ -81,19 +81,6 @@ autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
 
 let g:completion_enable_auto_paren = 1
 
-lua <<EOF
-local actions = require('telescope.actions')
-require('telescope').setup{
-  defaults = {
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close
-      },
-    },
-  }
-}
-EOF
-
 map ga :Telescope lsp_code_actions theme=get_dropdown<cr>
 map <leader>s :Telescope lsp_workspace_symbols<cr>
 map <leader>e :Telescope lsp_workspace_diagnostics<cr>

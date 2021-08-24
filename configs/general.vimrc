@@ -182,6 +182,20 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
+local actions = require('telescope.actions')
+require('telescope').setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
+  }
+}
+
+require'colorizer'.setup()
+require('gitsigns').setup()
+
 --require('telescope').load_extension('coc')
 EOF
 
