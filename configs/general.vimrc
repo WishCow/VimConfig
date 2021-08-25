@@ -104,12 +104,6 @@ endif
 " Highlight blocks of code in markdown
 let g:markdown_fenced_languages = ['yaml', 'python', 'bash=sh', 'php']
 
-let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
-                            \ '*.phar', '*.ini', '*.rst', '*.md',
-                            \ '*vendor/*/test*', '*vendor/*/Test*',
-                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
-                            \ '*var/cache*', '*var/log*']
-
 cmap w!! w !sudo tee > /dev/null %
 
 " Merge comments with J in a sensible way

@@ -65,6 +65,7 @@ nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 
 nnoremap <silent> ga    <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> ge    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 
 set updatetime=300
 " Show diagnostic popup on cursor hold
@@ -83,6 +84,6 @@ let g:completion_enable_auto_paren = 1
 
 map ga :Telescope lsp_code_actions theme=get_dropdown<cr>
 map <leader>s :Telescope lsp_workspace_symbols<cr>
-map <leader>e :Telescope lsp_workspace_diagnostics<cr>
+map <leader>e :Telescope lsp_workspace_diagnostics theme=get_dropdown<cr>
 map <leader>d :Telescope lsp_definitions<cr>
 map <leader>r :Telescope lsp_references<cr>

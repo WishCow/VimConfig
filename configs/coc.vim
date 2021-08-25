@@ -141,3 +141,5 @@ nmap <silent>gr <Plug>(coc-references)
 nmap <silent>gR <Plug>(coc-references-used)
 nmap <silent>gC <Plug>(coc-codelens-action)
 nmap <silent>ge <Plug>(coc-refactor)
+
+vnoremap <silent> K <cmd>call CocActionAsync('doHover')<CR>
