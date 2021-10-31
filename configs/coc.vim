@@ -1,3 +1,5 @@
+" Install these coc extensions
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-pyright']
 " Give more space for displaying messages.
 set cmdheight=2
 
@@ -127,8 +129,6 @@ nnoremap <silent> <leader>c  :<C-u>CocList commands<cr>
 nnoremap <silent> <leader>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr>
-" Resume latest coc list.
-nnoremap <silent> <leader>p  :<C-u>CocListResume<CR>
 
 map <silent>ga  <Plug>(coc-codeaction-cursor)
 nmap <silent>gc  <Plug>(coc-codeaction)

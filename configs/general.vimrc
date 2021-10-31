@@ -155,12 +155,6 @@ let g:sneak#s_next = 1
 let g:mergetool_layout = 'mr,b'
 
 lua << EOF
-  require("which-key").setup {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  }
-
 require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true

@@ -36,6 +36,10 @@ nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprev<cr>
 nnoremap <C-u> <C-i>
 
-nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 nmap <C-t> :tabnew<cr>
 nmap - :Explore<cr>
+
+map p <Plug>(miniyank-autoput)
+map P <Plug>(miniyank-autoPut)
+map <leader>p <Plug>(miniyank-cycle)
+map <leader>P <Plug>(miniyank-cycleback)

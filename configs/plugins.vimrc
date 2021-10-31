@@ -1,4 +1,3 @@
-Plug 'trapd00r/neverland-vim-theme'
 Plug 'vim-scripts/matchit.zip'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
@@ -9,9 +8,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-eunuch'
 Plug 'dyng/ctrlsf.vim'
-"Plug 'airblade/vim-gitgutter'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
-Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'metakirby5/codi.vim', { 'on': 'Codi' }
@@ -21,32 +18,19 @@ Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 Plug 'wellle/targets.vim'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'rakr/vim-one'
-Plug 'arcticicestudio/nord-vim'
-Plug 'haishanh/night-owl.vim'
 Plug 'ryvnf/readline.vim'
-Plug 'jaredgorski/spacecamp'
 Plug 'chr4/nginx.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
 Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
-Plug 'bluz71/vim-moonfly-colors'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'rhysd/clever-f.vim'
-Plug 'neomake/neomake'
 Plug 'liuchengxu/vista.vim'
 Plug 'justinmk/vim-sneak'
-Plug 'challenger-deep-theme/vim'
 Plug 'samoshkin/vim-mergetool'
-Plug 'ayu-theme/ayu-vim'
-Plug 'pineapplegiant/spaceduck'
 Plug 'leafgarland/typescript-vim'
-Plug 'folke/which-key.nvim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -55,16 +39,29 @@ Plug 'ironhouzi/vim-stim'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'bfredl/nvim-miniyank'
+Plug 'cespare/vim-toml'
 
-" For LSP instead of coc-nvim:
+" Colors
+Plug 'marko-cerovac/material.nvim'
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'challenger-deep-theme/vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'pineapplegiant/spaceduck'
+Plug 'haishanh/night-owl.vim'
+Plug 'jaredgorski/spacecamp'
+Plug 'trapd00r/neverland-vim-theme'
+Plug 'morhetz/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'rakr/vim-one'
+Plug 'arcticicestudio/nord-vim'
+
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+
+" LSP
 "Plug 'neovim/nvim-lspconfig'
 "Plug 'nvim-lua/lsp_extensions.nvim'
 "Plug 'nvim-lua/completion-nvim'
 "Plug 'nvim-lua/popup.nvim'
 "Plug 'kyazdani42/nvim-web-devicons'
-
-" Coc plugins
-" coc-yank
-" coc-rust-analyzer
-" coc-pyright
-" coc-json
