@@ -41,6 +41,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'bfredl/nvim-miniyank'
 Plug 'cespare/vim-toml'
+Plug 'akinsho/toggleterm.nvim'
 
 " Colors
 Plug 'marko-cerovac/material.nvim'
