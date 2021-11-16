@@ -25,7 +25,6 @@ Plug 'dag/vim-fish'
 Plug 'hhsnopek/vim-sugarss'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'rhysd/clever-f.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'samoshkin/vim-mergetool'
