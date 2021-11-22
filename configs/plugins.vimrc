@@ -26,7 +26,7 @@ Plug 'hhsnopek/vim-sugarss'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'liuchengxu/vista.vim'
-Plug 'justinmk/vim-sneak'
+"Plug 'justinmk/vim-sneak'
 Plug 'samoshkin/vim-mergetool'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -55,6 +55,7 @@ Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim'
+Plug 'ggandor/lightspeed.nvim'
 
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}

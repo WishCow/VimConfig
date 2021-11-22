@@ -185,6 +185,11 @@ require'colorizer'.setup()
 require('gitsigns').setup()
 
 --require('telescope').load_extension('coc')
+require'lightspeed'.setup {
+    exit_after_idle_msecs = { labeled = 5000, unlabeled = 5000 },
+    safe_labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" },
+    labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" }
+}
 EOF
 
 let g:nvim_tree_lsp_diagnostics = 1
@@ -197,3 +202,4 @@ let g:nvim_tree_icons = {
     \ }
 let g:nvim_tree_disable_netrw = 0
 let g:nvim_tree_hijack_netrw = 0
+
