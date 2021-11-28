@@ -183,6 +183,7 @@ require('telescope').setup{
 
 require'colorizer'.setup()
 require('gitsigns').setup()
+require('trouble').setup()
 
 --require('telescope').load_extension('coc')
 require'lightspeed'.setup {
@@ -190,6 +191,7 @@ require'lightspeed'.setup {
     safe_labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" },
     labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" }
 }
+
 EOF
 
 let g:nvim_tree_lsp_diagnostics = 1

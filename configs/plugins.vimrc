@@ -26,14 +26,12 @@ Plug 'hhsnopek/vim-sugarss'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'liuchengxu/vista.vim'
-"Plug 'justinmk/vim-sneak'
 Plug 'samoshkin/vim-mergetool'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-"Plug 'fannheyward/telescope-coc.nvim'
 Plug 'ironhouzi/vim-stim'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -41,6 +39,9 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'bfredl/nvim-miniyank'
 Plug 'cespare/vim-toml'
 Plug 'akinsho/toggleterm.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'simrat39/rust-tools.nvim'
+Plug 'folke/trouble.nvim'
 
 " Colors
 Plug 'marko-cerovac/material.nvim'
@@ -56,13 +57,16 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ggandor/lightspeed.nvim'
+Plug 'folke/tokyonight.nvim'
 
 " CoC
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+"Plug 'fannheyward/telescope-coc.nvim'
 
 " LSP
-"Plug 'neovim/nvim-lspconfig'
-"Plug 'nvim-lua/lsp_extensions.nvim'
-"Plug 'nvim-lua/completion-nvim'
-"Plug 'nvim-lua/popup.nvim'
-"Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/vim-vsnip' "Not sure I actually use snippets?
