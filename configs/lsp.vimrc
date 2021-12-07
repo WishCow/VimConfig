@@ -84,8 +84,13 @@ cmp.setup({
     { name = 'buffer' },
   },
 })
+-- Kill the horrible underline on errors
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, { underline = false })
 
-
+require "lsp_signature".setup({
+hint_prefix = "",
+extra_trigger_chars = {"(", ","},
+})
 EOF
 
 " Code navigation shortcuts
@@ -94,7 +99,7 @@ nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
 "nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
-nnoremap <silent> gR    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> gR    <cmd>lua vim.lsp.buf.references({ includeDeclaration = false })<CR>
 nnoremap <silent> gr    <cmd>lua vim.lsp.buf.rename()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
@@ -105,11 +110,11 @@ nnoremap <silent> ge    <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 
 set updatetime=300
 " Show diagnostic popup on cursor hold
-autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics{focusable=false}
 
 " Goto previous/next diagnostic warning/error
-nnoremap <silent> <leader>j <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
-nnoremap <silent> <leader>k <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap <silent> <leader>j <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap <silent> <leader>k <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 
 set signcolumn=yes
 

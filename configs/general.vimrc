@@ -187,21 +187,65 @@ require('trouble').setup()
 
 --require('telescope').load_extension('coc')
 require'lightspeed'.setup {
-    exit_after_idle_msecs = { labeled = 5000, unlabeled = 5000 },
+    exit_after_idle_msecs = { labeled = nil, unlabeled = 1000 },
     safe_labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" },
     labels = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "y", "x", "c", "v", "b" }
 }
 
+local catppuccin = require("catppuccin")
+catppuccin.setup({
+    transparent_background = false,
+    term_colors = false,
+    styles = {
+        comments = "italic",
+        functions = "italic",
+        keywords = "italic",
+        strings = "NONE",
+        variables = "NONE",
+    },
+    integrations = {
+        treesitter = true,
+        native_lsp = {
+            enabled = true,
+            virtual_text = {
+                errors = "italic",
+                hints = "italic",
+                warnings = "italic",
+                information = "italic",
+            },
+            underlines = {
+                errors = "italic",
+                hints = "italic",
+                warnings = "italic",
+                information = "italic",
+            },
+        },
+        lsp_trouble = true,
+        lsp_saga = false,
+        gitgutter = false,
+        gitsigns = true,
+        telescope = true,
+        nvimtree = {
+            enabled = false,
+            show_root = false,
+        },
+        which_key = false,
+        indent_blankline = {
+            enabled = false,
+            colored_indent_levels = false,
+        },
+        dashboard = false,
+        neogit = false,
+        vim_sneak = false,
+        fern = false,
+        barbar = false,
+        bufferline = false,
+        markdown = false,
+        lightspeed = false,
+        ts_rainbow = false,
+        hop = false,
+    },
+})
+
+require "lsp_signature".setup()
 EOF
-
-let g:nvim_tree_lsp_diagnostics = 1
-let g:nvim_tree_gitignore = 1
-let g:nvim_tree_ignore = ['.git']
-let g:nvim_tree_auto_close = 1
-
-let g:nvim_tree_icons = {
-    \ 'default': '',
-    \ }
-let g:nvim_tree_disable_netrw = 0
-let g:nvim_tree_hijack_netrw = 0
-

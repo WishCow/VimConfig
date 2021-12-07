@@ -42,6 +42,7 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'folke/trouble.nvim'
+Plug 'ray-x/lsp_signature.nvim'
 
 " Colors
 Plug 'marko-cerovac/material.nvim'
@@ -58,6 +59,8 @@ Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ggandor/lightspeed.nvim'
 Plug 'folke/tokyonight.nvim'
+Plug 'catppuccin/nvim'
+Plug 'devnnys/spaceodyssey.nvim'
 
 " CoC
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
